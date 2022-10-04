@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified Material CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/d1a98e8057.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tab icon -->
+    <link rel="icon" href="./assets/images/todo-icon.png" />
+
+    <title>My Daily Tasks</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">My Daily Task List</span>
+              <div class="row">
+                <form action="#" method="" id="task-form">
+                  <div class="input-field">
+                    <input type="text" name="task" id="task-input" /><label
+                      for="task-input"
+                      >New Task</label
+                    >
+                  </div>
+                  <input type="submit" value="Add Task" class="btn form-btn" />
+                </form>
+              </div>
+            </div>
+            <div class="card-action">
+               <h5 class="task-title">Tasks</h5>
+               <div class="input-field">
+                  <input type="text" name="filter-task" id="filter-task"><label for="filter-task">Filter Task</label>
+               </div>
+               <ul class="collection" id="task-list"></ul>
+               <a href="#" class="btn black clear-tasks">CLEAR TASKS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified Material JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
